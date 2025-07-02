@@ -1,0 +1,155 @@
+2025-07-02 08:03:32,088 - INFO - Attempting to acquire lock for load
+2025-07-02 08:03:32,089 - INFO - Entering load method
+2025-07-02 08:03:32,089 - INFO - No database file found. Starting with an empty database.
+2025-07-02 08:03:32,089 - INFO - Exiting load method
+2025-07-02 08:03:32,090 - INFO - Releasing lock for load
+2025-07-02 08:04:03,653 - INFO - Attempting to acquire lock for login
+2025-07-02 08:04:03,653 - INFO - Processing login for user 'admin'
+2025-07-02 08:04:03,653 - INFO - Logged in as admin with role admin
+2025-07-02 08:04:03,653 - INFO - Releasing lock for login
+2025-07-02 08:14:31,010 - INFO - Attempting to acquire lock for create
+2025-07-02 08:14:31,011 - INFO - Creating key 'student001' with value '{"Name": "Alice", "Age": 15, "Grade": 10, "Class": "A", "Subjects": ["Math", "Science"]}'
+2025-07-02 08:14:31,011 - INFO - Parsing value '{"Name": "Alice", "Age": 15, "Grade": 10, "Class": "A", "Subjects": ["Math", "Science"]}'
+2025-07-02 08:14:31,011 - INFO - Parsed value to {'Name': 'Alice', 'Age': 15, 'Grade': 10, 'Class': 'A', 'Subjects': ['Math', 'Science']}
+2025-07-02 08:14:31,011 - INFO - Student data validation passed
+2025-07-02 08:14:31,011 - INFO - Parsed value: {'Name': 'Alice', 'Age': 15, 'Grade': 10, 'Class': 'A', 'Subjects': ['Math', 'Science']}
+2025-07-02 08:14:31,012 - INFO - Added student001 to store
+2025-07-02 08:14:31,012 - INFO - Added student001 to value_index with value_key {"Age": 15, "Class": "A", "Grade": 10, "Name": "Alice", "Subjects": ["Math", "Science"]}
+2025-07-02 08:14:31,013 - INFO - Extracted words for 'student001': {'15', 'alice', 'name', 'math', '10', 'science', 'age', 'a', 'class', 'grade', 'subjects'}
+2025-07-02 08:14:31,013 - INFO - Added student001 to inverted_index for word '15'
+2025-07-02 08:14:31,013 - INFO - Added student001 to inverted_index for word 'alice'
+2025-07-02 08:14:31,013 - INFO - Added student001 to inverted_index for word 'name'
+2025-07-02 08:14:31,014 - INFO - Added student001 to inverted_index for word 'math'
+2025-07-02 08:14:31,014 - INFO - Added student001 to inverted_index for word '10'
+2025-07-02 08:14:31,014 - INFO - Added student001 to inverted_index for word 'science'
+2025-07-02 08:14:31,014 - INFO - Added student001 to inverted_index for word 'age'
+2025-07-02 08:14:31,014 - INFO - Added student001 to inverted_index for word 'a'
+2025-07-02 08:14:31,015 - INFO - Added student001 to inverted_index for word 'class'
+2025-07-02 08:14:31,015 - INFO - Added student001 to inverted_index for word 'grade'
+2025-07-02 08:14:31,015 - INFO - Added student001 to inverted_index for word 'subjects'
+2025-07-02 08:14:31,015 - INFO - Calling save method
+2025-07-02 08:14:31,016 - INFO - Attempting to acquire lock for save
+2025-07-02 08:14:31,016 - INFO - Entering save method
+2025-07-02 08:14:31,017 - INFO - Creating temporary file
+2025-07-02 08:14:31,018 - INFO - Writing to compressed temporary file
+2025-07-02 08:14:31,136 - INFO - Renaming /home/ashu304/simpledb/tmpk0tm8r8d.gz to database.json.gz
+2025-07-02 08:14:31,137 - INFO - Saved compressed database to database.json.gz
+2025-07-02 08:14:31,137 - INFO - File write completed
+2025-07-02 08:14:31,138 - INFO - Exiting save method
+2025-07-02 08:14:31,138 - INFO - Releasing lock for save
+2025-07-02 08:14:31,138 - INFO - Completed create for key 'student001'
+2025-07-02 08:14:31,139 - INFO - Releasing lock for create
+2025-07-02 08:15:08,013 - INFO - Attempting to acquire lock for find
+2025-07-02 08:15:08,013 - INFO - Processing find query: fulltext Math Science sortby Age
+2025-07-02 08:15:08,013 - INFO - Using raw string value 'Math Science' for fulltext query
+2025-07-02 08:15:08,014 - INFO - Inverted index for query terms: [('math', ['student001']), ('science', ['student001'])]
+2025-07-02 08:15:08,014 - INFO - Fulltext query results: ['student001']
+2025-07-02 08:15:08,015 - INFO - Releasing lock for find
+2025-07-02 15:35:01,395 - INFO - Attempting to acquire lock for load
+2025-07-02 15:35:01,396 - INFO - Entering load method
+2025-07-02 15:35:01,397 - INFO - Opening compressed database file for reading
+2025-07-02 15:35:01,398 - INFO - Reading compressed database file
+2025-07-02 15:35:01,428 - INFO - Rebuilding indices
+2025-07-02 15:35:01,428 - INFO - Attempting to acquire lock for rebuild_indices
+2025-07-02 15:35:01,429 - INFO - Rebuilding indices
+2025-07-02 15:35:01,429 - INFO - Processing key 'student001' with value {'Name': 'Alice', 'Age': 15, 'Grade': 10, 'Class': 'A', 'Subjects': ['Math', 'Science']}
+2025-07-02 15:35:01,430 - INFO - Added student001 to value_index with value_key {"Age": 15, "Class": "A", "Grade": 10, "Name": "Alice", "Subjects": ["Math", "Science"]}
+2025-07-02 15:35:01,430 - INFO - Tokenized string for 'student001': {'name': 'alice', 'age': 15, 'grade': 10, 'class': 'a', 'subjects': ['math', 'science']}
+2025-07-02 15:35:01,431 - INFO - Extracted words for 'student001': {'science', '10', 'grade', 'subjects', 'math', 'class', '15', 'a', 'age', 'alice', 'name'}
+2025-07-02 15:35:01,431 - INFO - Added student001 to inverted_index for word 'science'
+2025-07-02 15:35:01,431 - INFO - Added student001 to inverted_index for word '10'
+2025-07-02 15:35:01,431 - INFO - Added student001 to inverted_index for word 'grade'
+2025-07-02 15:35:01,431 - INFO - Added student001 to inverted_index for word 'subjects'
+2025-07-02 15:35:01,432 - INFO - Added student001 to inverted_index for word 'math'
+2025-07-02 15:35:01,432 - INFO - Added student001 to inverted_index for word 'class'
+2025-07-02 15:35:01,432 - INFO - Added student001 to inverted_index for word '15'
+2025-07-02 15:35:01,432 - INFO - Added student001 to inverted_index for word 'a'
+2025-07-02 15:35:01,432 - INFO - Added student001 to inverted_index for word 'age'
+2025-07-02 15:35:01,433 - INFO - Added student001 to inverted_index for word 'alice'
+2025-07-02 15:35:01,433 - INFO - Added student001 to inverted_index for word 'name'
+2025-07-02 15:35:01,433 - INFO - Indices rebuilt
+2025-07-02 15:35:01,434 - INFO - Releasing lock for rebuild_indices
+2025-07-02 15:35:01,434 - INFO - Loaded compressed database from database.json.gz
+2025-07-02 15:35:01,434 - INFO - Exiting load method
+2025-07-02 15:35:01,435 - INFO - Releasing lock for load
+2025-07-02 15:44:19,776 - INFO - Attempting to acquire lock for load
+2025-07-02 15:44:19,776 - INFO - Entering load method
+2025-07-02 15:44:19,777 - INFO - Opening compressed database file for reading
+2025-07-02 15:44:19,778 - INFO - Reading compressed database file
+2025-07-02 15:44:19,778 - INFO - Rebuilding indices
+2025-07-02 15:44:19,779 - INFO - Attempting to acquire lock for rebuild_indices
+2025-07-02 15:44:19,779 - INFO - Rebuilding indices
+2025-07-02 15:44:19,780 - INFO - Processing key 'student001' with value {'Name': 'Alice', 'Age': 15, 'Grade': 10, 'Class': 'A', 'Subjects': ['Math', 'Science']}
+2025-07-02 15:44:19,780 - INFO - Added student001 to value_index with value_key {"Age": 15, "Class": "A", "Grade": 10, "Name": "Alice", "Subjects": ["Math", "Science"]}
+2025-07-02 15:44:19,780 - INFO - Tokenized string for 'student001': {'name': 'alice', 'age': 15, 'grade': 10, 'class': 'a', 'subjects': ['math', 'science']}
+2025-07-02 15:44:19,781 - INFO - Extracted words for 'student001': {'math', 'science', 'grade', 'alice', 'a', '10', '15', 'subjects', 'class', 'age', 'name'}
+2025-07-02 15:44:19,781 - INFO - Added student001 to inverted_index for word 'math'
+2025-07-02 15:44:19,781 - INFO - Added student001 to inverted_index for word 'science'
+2025-07-02 15:44:19,782 - INFO - Added student001 to inverted_index for word 'grade'
+2025-07-02 15:44:19,782 - INFO - Added student001 to inverted_index for word 'alice'
+2025-07-02 15:44:19,782 - INFO - Added student001 to inverted_index for word 'a'
+2025-07-02 15:44:19,782 - INFO - Added student001 to inverted_index for word '10'
+2025-07-02 15:44:19,783 - INFO - Added student001 to inverted_index for word '15'
+2025-07-02 15:44:19,783 - INFO - Added student001 to inverted_index for word 'subjects'
+2025-07-02 15:44:19,783 - INFO - Added student001 to inverted_index for word 'class'
+2025-07-02 15:44:19,783 - INFO - Added student001 to inverted_index for word 'age'
+2025-07-02 15:44:19,783 - INFO - Added student001 to inverted_index for word 'name'
+2025-07-02 15:44:19,784 - INFO - Indices rebuilt
+2025-07-02 15:44:19,784 - INFO - Releasing lock for rebuild_indices
+2025-07-02 15:44:19,784 - INFO - Loaded compressed database from database.json.gz
+2025-07-02 15:44:19,785 - INFO - Exiting load method
+2025-07-02 15:44:19,785 - INFO - Releasing lock for load
+2025-07-02 16:05:39,692 - INFO - Attempting to acquire lock for load
+2025-07-02 16:05:39,693 - INFO - Entering load method
+2025-07-02 16:05:39,694 - INFO - Opening compressed database file for reading
+2025-07-02 16:05:39,694 - INFO - Reading compressed database file
+2025-07-02 16:05:39,695 - INFO - Rebuilding indices
+2025-07-02 16:05:39,695 - INFO - Attempting to acquire lock for rebuild_indices
+2025-07-02 16:05:39,695 - INFO - Rebuilding indices
+2025-07-02 16:05:39,697 - INFO - Processing key 'student001' with value {'Name': 'Alice', 'Age': 15, 'Grade': 10, 'Class': 'A', 'Subjects': ['Math', 'Science']}
+2025-07-02 16:05:39,697 - INFO - Added student001 to value_index with value_key {"Age": 15, "Class": "A", "Grade": 10, "Name": "Alice", "Subjects": ["Math", "Science"]}
+2025-07-02 16:05:39,697 - INFO - Tokenized string for 'student001': {'name': 'alice', 'age': 15, 'grade': 10, 'class': 'a', 'subjects': ['math', 'science']}
+2025-07-02 16:05:39,698 - INFO - Extracted words for 'student001': {'class', 'grade', '15', 'name', 'age', 'science', 'subjects', 'alice', 'math', 'a', '10'}
+2025-07-02 16:05:39,698 - INFO - Added student001 to inverted_index for word 'class'
+2025-07-02 16:05:39,698 - INFO - Added student001 to inverted_index for word 'grade'
+2025-07-02 16:05:39,699 - INFO - Added student001 to inverted_index for word '15'
+2025-07-02 16:05:39,699 - INFO - Added student001 to inverted_index for word 'name'
+2025-07-02 16:05:39,699 - INFO - Added student001 to inverted_index for word 'age'
+2025-07-02 16:05:39,699 - INFO - Added student001 to inverted_index for word 'science'
+2025-07-02 16:05:39,700 - INFO - Added student001 to inverted_index for word 'subjects'
+2025-07-02 16:05:39,700 - INFO - Added student001 to inverted_index for word 'alice'
+2025-07-02 16:05:39,700 - INFO - Added student001 to inverted_index for word 'math'
+2025-07-02 16:05:39,700 - INFO - Added student001 to inverted_index for word 'a'
+2025-07-02 16:05:39,701 - INFO - Added student001 to inverted_index for word '10'
+2025-07-02 16:05:39,701 - INFO - Indices rebuilt
+2025-07-02 16:05:39,701 - INFO - Releasing lock for rebuild_indices
+2025-07-02 16:05:39,701 - INFO - Loaded compressed database from database.json.gz
+2025-07-02 16:05:39,702 - INFO - Exiting load method
+2025-07-02 16:05:39,702 - INFO - Releasing lock for load
+2025-07-02 16:10:27,672 - INFO - Attempting to acquire lock for load
+2025-07-02 16:10:27,672 - INFO - Entering load method
+2025-07-02 16:10:27,673 - INFO - Opening compressed database file for reading
+2025-07-02 16:10:27,674 - INFO - Reading compressed database file
+2025-07-02 16:10:27,674 - INFO - Rebuilding indices
+2025-07-02 16:10:27,675 - INFO - Attempting to acquire lock for rebuild_indices
+2025-07-02 16:10:27,675 - INFO - Rebuilding indices
+2025-07-02 16:10:27,676 - INFO - Processing key 'student001' with value {'Name': 'Alice', 'Age': 15, 'Grade': 10, 'Class': 'A', 'Subjects': ['Math', 'Science']}
+2025-07-02 16:10:27,676 - INFO - Added student001 to value_index with value_key {"Age": 15, "Class": "A", "Grade": 10, "Name": "Alice", "Subjects": ["Math", "Science"]}
+2025-07-02 16:10:27,676 - INFO - Tokenized string for 'student001': {'name': 'alice', 'age': 15, 'grade': 10, 'class': 'a', 'subjects': ['math', 'science']}
+2025-07-02 16:10:27,677 - INFO - Extracted words for 'student001': {'class', '10', 'subjects', 'math', 'grade', 'alice', 'a', 'age', 'science', '15', 'name'}
+2025-07-02 16:10:27,677 - INFO - Added student001 to inverted_index for word 'class'
+2025-07-02 16:10:27,677 - INFO - Added student001 to inverted_index for word '10'
+2025-07-02 16:10:27,678 - INFO - Added student001 to inverted_index for word 'subjects'
+2025-07-02 16:10:27,678 - INFO - Added student001 to inverted_index for word 'math'
+2025-07-02 16:10:27,678 - INFO - Added student001 to inverted_index for word 'grade'
+2025-07-02 16:10:27,678 - INFO - Added student001 to inverted_index for word 'alice'
+2025-07-02 16:10:27,679 - INFO - Added student001 to inverted_index for word 'a'
+2025-07-02 16:10:27,679 - INFO - Added student001 to inverted_index for word 'age'
+2025-07-02 16:10:27,679 - INFO - Added student001 to inverted_index for word 'science'
+2025-07-02 16:10:27,679 - INFO - Added student001 to inverted_index for word '15'
+2025-07-02 16:10:27,679 - INFO - Added student001 to inverted_index for word 'name'
+2025-07-02 16:10:27,680 - INFO - Indices rebuilt
+2025-07-02 16:10:27,680 - INFO - Releasing lock for rebuild_indices
+2025-07-02 16:10:27,680 - INFO - Loaded compressed database from database.json.gz
+2025-07-02 16:10:27,681 - INFO - Exiting load method
+2025-07-02 16:10:27,681 - INFO - Releasing lock for load

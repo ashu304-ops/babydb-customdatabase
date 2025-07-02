@@ -1,0 +1,333 @@
+2025-07-02 08:17:45,647 - INFO - Attempting to acquire lock for load
+2025-07-02 08:17:45,647 - INFO - Entering load method
+2025-07-02 08:17:45,647 - INFO - No database file found. Starting with an empty database.
+2025-07-02 08:17:45,648 - INFO - Exiting load method
+2025-07-02 08:17:45,648 - INFO - Releasing lock for load
+2025-07-02 08:17:50,687 - INFO - Attempting to acquire lock for list_all
+2025-07-02 08:17:50,688 - INFO - Listing all key-value pairs
+2025-07-02 08:17:50,688 - INFO - Releasing lock for list_all
+2025-07-02 08:18:02,202 - INFO - Attempting to acquire lock for login
+2025-07-02 08:18:02,203 - INFO - Processing login for user 'admin'
+2025-07-02 08:18:02,203 - INFO - Logged in as admin with role admin
+2025-07-02 08:18:02,203 - INFO - Releasing lock for login
+2025-07-02 08:18:04,777 - INFO - Attempting to acquire lock for list_all
+2025-07-02 08:18:04,777 - INFO - Listing all key-value pairs
+2025-07-02 08:18:04,777 - INFO - Releasing lock for list_all
+2025-07-02 08:18:33,115 - INFO - Attempting to acquire lock for create
+2025-07-02 08:18:33,115 - INFO - Creating key 'student001' with value '{"Name": "Alice", "Age": 15, "Grade": 10, "Class": "A", "Subjects": ["Math", "Science"]}'
+2025-07-02 08:18:33,115 - INFO - Parsing value '{"Name": "Alice", "Age": 15, "Grade": 10, "Class": "A", "Subjects": ["Math", "Science"]}'
+2025-07-02 08:18:33,115 - INFO - Parsed value to {'Name': 'Alice', 'Age': 15, 'Grade': 10, 'Class': 'A', 'Subjects': ['Math', 'Science']}
+2025-07-02 08:18:33,116 - INFO - Student data validation passed
+2025-07-02 08:18:33,116 - INFO - Parsed value: {'Name': 'Alice', 'Age': 15, 'Grade': 10, 'Class': 'A', 'Subjects': ['Math', 'Science']}
+2025-07-02 08:18:33,116 - INFO - Added student001 to store
+2025-07-02 08:18:33,116 - INFO - Added student001 to value_index with value_key {"Age": 15, "Class": "A", "Grade": 10, "Name": "Alice", "Subjects": ["Math", "Science"]}
+2025-07-02 08:18:33,117 - INFO - Extracted words for 'student001': {'name', 'alice', 'age', 'math', 'grade', '10', 'science', '15', 'a', 'subjects', 'class'}
+2025-07-02 08:18:33,117 - INFO - Added student001 to inverted_index for word 'name'
+2025-07-02 08:18:33,117 - INFO - Added student001 to inverted_index for word 'alice'
+2025-07-02 08:18:33,118 - INFO - Added student001 to inverted_index for word 'age'
+2025-07-02 08:18:33,118 - INFO - Added student001 to inverted_index for word 'math'
+2025-07-02 08:18:33,118 - INFO - Added student001 to inverted_index for word 'grade'
+2025-07-02 08:18:33,118 - INFO - Added student001 to inverted_index for word '10'
+2025-07-02 08:18:33,118 - INFO - Added student001 to inverted_index for word 'science'
+2025-07-02 08:18:33,118 - INFO - Added student001 to inverted_index for word '15'
+2025-07-02 08:18:33,118 - INFO - Added student001 to inverted_index for word 'a'
+2025-07-02 08:18:33,118 - INFO - Added student001 to inverted_index for word 'subjects'
+2025-07-02 08:18:33,119 - INFO - Added student001 to inverted_index for word 'class'
+2025-07-02 08:18:33,119 - INFO - Calling save method
+2025-07-02 08:18:33,119 - INFO - Attempting to acquire lock for save
+2025-07-02 08:18:33,119 - INFO - Entering save method
+2025-07-02 08:18:33,120 - INFO - Creating temporary file
+2025-07-02 08:18:33,121 - INFO - Writing to compressed temporary file
+2025-07-02 08:18:33,217 - INFO - Renaming /home/ashu304/simpledb/simpledb/tmp5tkpjqf5.gz to database.json.gz
+2025-07-02 08:18:33,218 - INFO - Saved compressed database to database.json.gz
+2025-07-02 08:18:33,218 - INFO - File write completed
+2025-07-02 08:18:33,219 - INFO - Exiting save method
+2025-07-02 08:18:33,219 - INFO - Releasing lock for save
+2025-07-02 08:18:33,219 - INFO - Completed create for key 'student001'
+2025-07-02 08:18:33,220 - INFO - Releasing lock for create
+2025-07-02 08:19:11,590 - INFO - Attempting to acquire lock for upload
+2025-07-02 08:19:11,590 - INFO - Uploading file for key 'student001'
+2025-07-02 08:19:10,780 - INFO - Calling save method
+2025-07-02 08:19:10,780 - INFO - Attempting to acquire lock for save
+2025-07-02 08:19:10,780 - INFO - Entering save method
+2025-07-02 08:19:10,781 - INFO - Creating backup
+2025-07-02 08:19:10,781 - INFO - Backup created
+2025-07-02 08:19:10,782 - INFO - Creating temporary file
+2025-07-02 08:19:10,782 - INFO - Writing to compressed temporary file
+2025-07-02 08:19:10,863 - INFO - Renaming /home/ashu304/simpledb/simpledb/tmpx6n8gixj.gz to database.json.gz
+2025-07-02 08:19:10,864 - INFO - Saved compressed database to database.json.gz
+2025-07-02 08:19:10,864 - INFO - File write completed
+2025-07-02 08:19:10,865 - INFO - Exiting save method
+2025-07-02 08:19:10,865 - INFO - Releasing lock for save
+2025-07-02 08:19:10,866 - INFO - Uploaded compressed file for student001: files/student001_picture.png.gz
+2025-07-02 08:19:10,866 - INFO - Releasing lock for upload
+2025-07-02 08:19:39,072 - INFO - Attempting to acquire lock for find
+2025-07-02 08:19:39,072 - INFO - Processing find query: fulltext Math Science sortby Age
+2025-07-02 08:19:39,072 - INFO - Using raw string value 'Math Science' for fulltext query
+2025-07-02 08:19:39,073 - INFO - Inverted index for query terms: [('science', ['student001']), ('math', ['student001'])]
+2025-07-02 08:19:39,073 - INFO - Fulltext query results: ['student001']
+2025-07-02 08:19:39,073 - INFO - Releasing lock for find
+2025-07-02 08:20:08,350 - INFO - Attempting to acquire lock for download_file
+2025-07-02 08:20:08,351 - INFO - Downloading file for key 'student001'
+2025-07-02 08:20:08,358 - INFO - Releasing lock for download_file
+2025-07-02 08:20:45,231 - INFO - Attempting to acquire lock for load
+2025-07-02 08:20:45,231 - INFO - Entering load method
+2025-07-02 08:20:45,232 - INFO - Opening compressed database file for reading
+2025-07-02 08:20:45,233 - INFO - Reading compressed database file
+2025-07-02 08:20:45,233 - INFO - Rebuilding indices
+2025-07-02 08:20:45,234 - INFO - Attempting to acquire lock for rebuild_indices
+2025-07-02 08:20:45,234 - INFO - Rebuilding indices
+2025-07-02 08:20:45,235 - INFO - Processing key 'student001' with value {'Name': 'Alice', 'Age': 15, 'Grade': 10, 'Class': 'A', 'Subjects': ['Math', 'Science'], 'file_paths': [{'path': 'files/student001_picture.png.gz', 'original_ext': '.png', 'size': 492262, 'original_size': 495614, 'uploaded': '2025-07-02T08:19:10', 'mime': 'image/png'}]}
+2025-07-02 08:20:45,235 - INFO - Added student001 to value_index with value_key {"Age": 15, "Class": "A", "Grade": 10, "Name": "Alice", "Subjects": ["Math", "Science"], "file_paths": [{"mime": "image/png", "original_ext": ".png", "original_size": 495614, "path": "files/student001_picture.png.gz", "size": 492262, "uploaded": "2025-07-02T08:19:10"}]}
+2025-07-02 08:20:45,235 - INFO - Tokenized string for 'student001': {'name': 'alice', 'age': 15, 'grade': 10, 'class': 'a', 'subjects': ['math', 'science'], 'file_paths': [{'path': 'files/student001_picture.png.gz', 'original_ext': '.png', 'size': 492262, 'original_size': 495614, 'uploaded': '2025-07-02t08:19:10', 'mime': 'image/png'}]}
+2025-07-02 08:20:45,236 - INFO - Extracted words for 'student001': {'file_paths', '2025', '495614', '10', 'uploaded', '02t08', 'math', 'grade', 'name', 'age', 'path', 'class', '07', 'mime', 'png', 'student001_picture', 'size', 'alice', 'files', 'original_size', 'image', 'subjects', 'a', '19', 'science', 'original_ext', '492262', 'gz', '15'}
+2025-07-02 08:20:45,236 - INFO - Added student001 to inverted_index for word 'file_paths'
+2025-07-02 08:20:45,236 - INFO - Added student001 to inverted_index for word '2025'
+2025-07-02 08:20:45,236 - INFO - Added student001 to inverted_index for word '495614'
+2025-07-02 08:20:45,236 - INFO - Added student001 to inverted_index for word '10'
+2025-07-02 08:20:45,236 - INFO - Added student001 to inverted_index for word 'uploaded'
+2025-07-02 08:20:45,237 - INFO - Added student001 to inverted_index for word '02t08'
+2025-07-02 08:20:45,237 - INFO - Added student001 to inverted_index for word 'math'
+2025-07-02 08:20:45,237 - INFO - Added student001 to inverted_index for word 'grade'
+2025-07-02 08:20:45,237 - INFO - Added student001 to inverted_index for word 'name'
+2025-07-02 08:20:45,237 - INFO - Added student001 to inverted_index for word 'age'
+2025-07-02 08:20:45,237 - INFO - Added student001 to inverted_index for word 'path'
+2025-07-02 08:20:45,237 - INFO - Added student001 to inverted_index for word 'class'
+2025-07-02 08:20:45,237 - INFO - Added student001 to inverted_index for word '07'
+2025-07-02 08:20:45,237 - INFO - Added student001 to inverted_index for word 'mime'
+2025-07-02 08:20:45,238 - INFO - Added student001 to inverted_index for word 'png'
+2025-07-02 08:20:45,238 - INFO - Added student001 to inverted_index for word 'student001_picture'
+2025-07-02 08:20:45,238 - INFO - Added student001 to inverted_index for word 'size'
+2025-07-02 08:20:45,238 - INFO - Added student001 to inverted_index for word 'alice'
+2025-07-02 08:20:45,238 - INFO - Added student001 to inverted_index for word 'files'
+2025-07-02 08:20:45,238 - INFO - Added student001 to inverted_index for word 'original_size'
+2025-07-02 08:20:45,238 - INFO - Added student001 to inverted_index for word 'image'
+2025-07-02 08:20:45,238 - INFO - Added student001 to inverted_index for word 'subjects'
+2025-07-02 08:20:45,238 - INFO - Added student001 to inverted_index for word 'a'
+2025-07-02 08:20:45,238 - INFO - Added student001 to inverted_index for word '19'
+2025-07-02 08:20:45,239 - INFO - Added student001 to inverted_index for word 'science'
+2025-07-02 08:20:45,239 - INFO - Added student001 to inverted_index for word 'original_ext'
+2025-07-02 08:20:45,239 - INFO - Added student001 to inverted_index for word '492262'
+2025-07-02 08:20:45,239 - INFO - Added student001 to inverted_index for word 'gz'
+2025-07-02 08:20:45,239 - INFO - Added student001 to inverted_index for word '15'
+2025-07-02 08:20:45,239 - INFO - Indices rebuilt
+2025-07-02 08:20:45,240 - INFO - Releasing lock for rebuild_indices
+2025-07-02 08:20:45,240 - INFO - Loaded compressed database from database.json.gz
+2025-07-02 08:20:45,240 - INFO - Exiting load method
+2025-07-02 08:20:45,240 - INFO - Releasing lock for load
+2025-07-02 08:20:45,260 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.19.173.109:5000
+2025-07-02 08:20:45,260 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-02 08:22:26,187 - INFO - 127.0.0.1 - - [02/Jul/2025 08:22:26] "GET / HTTP/1.1" 200 -
+2025-07-02 08:22:26,450 - INFO - Attempting to acquire lock for login
+2025-07-02 08:22:26,451 - INFO - Processing login for user 'user'
+2025-07-02 08:22:26,451 - INFO - Logged in as user with role user
+2025-07-02 08:22:26,451 - INFO - Releasing lock for login
+2025-07-02 08:22:26,452 - INFO - 127.0.0.1 - - [02/Jul/2025 08:22:26] "GET /api/login/user/user123 HTTP/1.1" 200 -
+2025-07-02 08:22:26,493 - INFO - Attempting to acquire lock for list_all
+2025-07-02 08:22:26,493 - INFO - Listing all key-value pairs
+2025-07-02 08:22:26,494 - INFO - Releasing lock for list_all
+2025-07-02 08:22:26,495 - INFO - 127.0.0.1 - - [02/Jul/2025 08:22:26] "GET /api/list HTTP/1.1" 200 -
+2025-07-02 08:22:26,858 - INFO - 127.0.0.1 - - [02/Jul/2025 08:22:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-02 08:22:26,882 - INFO - 127.0.0.1 - - [02/Jul/2025 08:22:26] "GET /files/student001_picture.png.gz HTTP/1.1" 200 -
+2025-07-02 08:40:20,300 - INFO - Attempting to acquire lock for load
+2025-07-02 08:40:20,300 - INFO - Entering load method
+2025-07-02 08:40:20,301 - INFO - No database file found. Starting with an empty database.
+2025-07-02 08:40:20,301 - INFO - Exiting load method
+2025-07-02 08:40:20,301 - INFO - Releasing lock for load
+2025-07-02 08:40:20,301 - INFO - Attempting to acquire lock for login
+2025-07-02 08:40:20,301 - INFO - Processing login for user 'admin'
+2025-07-02 08:40:20,301 - INFO - Logged in as admin with role admin
+2025-07-02 08:40:20,302 - INFO - Releasing lock for login
+2025-07-02 08:40:20,302 - INFO - Attempting to acquire lock for create
+2025-07-02 08:40:20,302 - INFO - Creating key 'test1' with value '{"Name": "Test", "Age": 20, "Grade": 10, "Class": "A", "Subjects": ["Math"]}'
+2025-07-02 08:40:20,302 - INFO - Parsing value '{"Name": "Test", "Age": 20, "Grade": 10, "Class": "A", "Subjects": ["Math"]}'
+2025-07-02 08:40:20,302 - INFO - Parsed value to {'Name': 'Test', 'Age': 20, 'Grade': 10, 'Class': 'A', 'Subjects': ['Math']}
+2025-07-02 08:40:20,302 - INFO - Student data validation passed
+2025-07-02 08:40:20,302 - INFO - Parsed value: {'Name': 'Test', 'Age': 20, 'Grade': 10, 'Class': 'A', 'Subjects': ['Math']}
+2025-07-02 08:40:20,303 - INFO - Added test1 to store
+2025-07-02 08:40:20,303 - INFO - Added test1 to value_index with value_key {"Age": 20, "Class": "A", "Grade": 10, "Name": "Test", "Subjects": ["Math"]}
+2025-07-02 08:40:20,303 - INFO - Extracted words for 'test1': {'age', 'math', '10', 'class', 'test', '20', 'grade', 'a', 'name', 'subjects'}
+2025-07-02 08:40:20,303 - INFO - Added test1 to inverted_index for word 'age'
+2025-07-02 08:40:20,303 - INFO - Added test1 to inverted_index for word 'math'
+2025-07-02 08:40:20,303 - INFO - Added test1 to inverted_index for word '10'
+2025-07-02 08:40:20,304 - INFO - Added test1 to inverted_index for word 'class'
+2025-07-02 08:40:20,304 - INFO - Added test1 to inverted_index for word 'test'
+2025-07-02 08:40:20,304 - INFO - Added test1 to inverted_index for word '20'
+2025-07-02 08:40:20,304 - INFO - Added test1 to inverted_index for word 'grade'
+2025-07-02 08:40:20,304 - INFO - Added test1 to inverted_index for word 'a'
+2025-07-02 08:40:20,304 - INFO - Added test1 to inverted_index for word 'name'
+2025-07-02 08:40:20,304 - INFO - Added test1 to inverted_index for word 'subjects'
+2025-07-02 08:40:20,304 - INFO - Calling save method
+2025-07-02 08:40:20,304 - INFO - Attempting to acquire lock for save
+2025-07-02 08:40:20,304 - INFO - Entering save method
+2025-07-02 08:40:20,305 - INFO - Creating temporary file
+2025-07-02 08:40:20,306 - INFO - Writing to compressed temporary file
+2025-07-02 08:40:20,428 - INFO - Renaming /home/ashu304/simpledb/simpledb/tmppqabc8g6.gz to test_database.json.gz
+2025-07-02 08:40:20,428 - INFO - Saved compressed database to test_database.json.gz
+2025-07-02 08:40:20,429 - INFO - File write completed
+2025-07-02 08:40:20,430 - INFO - Exiting save method
+2025-07-02 08:40:20,430 - INFO - Releasing lock for save
+2025-07-02 08:40:20,430 - INFO - Completed create for key 'test1'
+2025-07-02 08:40:20,430 - INFO - Releasing lock for create
+2025-07-02 08:40:20,431 - INFO - Attempting to acquire lock for read
+2025-07-02 08:40:20,431 - INFO - Reading key 'test1'
+2025-07-02 08:40:20,431 - INFO - Releasing lock for read
+2025-07-02 08:40:20,434 - INFO - Attempting to acquire lock for load
+2025-07-02 08:40:20,434 - INFO - Entering load method
+2025-07-02 08:40:20,435 - INFO - Opening compressed database file for reading
+2025-07-02 08:40:20,436 - INFO - Reading compressed database file
+2025-07-02 08:40:20,437 - INFO - Rebuilding indices
+2025-07-02 08:40:20,438 - INFO - Attempting to acquire lock for rebuild_indices
+2025-07-02 08:40:20,438 - INFO - Rebuilding indices
+2025-07-02 08:40:20,440 - INFO - Processing key 'test1' with value {'Name': 'Test', 'Age': 20, 'Grade': 10, 'Class': 'A', 'Subjects': ['Math']}
+2025-07-02 08:40:20,440 - INFO - Added test1 to value_index with value_key {"Age": 20, "Class": "A", "Grade": 10, "Name": "Test", "Subjects": ["Math"]}
+2025-07-02 08:40:20,440 - INFO - Tokenized string for 'test1': {'name': 'test', 'age': 20, 'grade': 10, 'class': 'a', 'subjects': ['math']}
+2025-07-02 08:40:20,441 - INFO - Extracted words for 'test1': {'age', 'math', '10', 'class', 'test', '20', 'grade', 'a', 'name', 'subjects'}
+2025-07-02 08:40:20,441 - INFO - Added test1 to inverted_index for word 'age'
+2025-07-02 08:40:20,441 - INFO - Added test1 to inverted_index for word 'math'
+2025-07-02 08:40:20,441 - INFO - Added test1 to inverted_index for word '10'
+2025-07-02 08:40:20,441 - INFO - Added test1 to inverted_index for word 'class'
+2025-07-02 08:40:20,441 - INFO - Added test1 to inverted_index for word 'test'
+2025-07-02 08:40:20,441 - INFO - Added test1 to inverted_index for word '20'
+2025-07-02 08:40:20,441 - INFO - Added test1 to inverted_index for word 'grade'
+2025-07-02 08:40:20,442 - INFO - Added test1 to inverted_index for word 'a'
+2025-07-02 08:40:20,442 - INFO - Added test1 to inverted_index for word 'name'
+2025-07-02 08:40:20,442 - INFO - Added test1 to inverted_index for word 'subjects'
+2025-07-02 08:40:20,442 - INFO - Indices rebuilt
+2025-07-02 08:40:20,443 - INFO - Releasing lock for rebuild_indices
+2025-07-02 08:40:20,443 - INFO - Loaded compressed database from test_database.json.gz
+2025-07-02 08:40:20,444 - INFO - Exiting load method
+2025-07-02 08:40:20,444 - INFO - Releasing lock for load
+2025-07-02 08:40:20,444 - INFO - Attempting to acquire lock for login
+2025-07-02 08:40:20,444 - INFO - Processing login for user 'admin'
+2025-07-02 08:40:20,444 - INFO - Logged in as admin with role admin
+2025-07-02 08:40:20,444 - INFO - Releasing lock for login
+2025-07-02 08:40:20,444 - INFO - Attempting to acquire lock for create
+2025-07-02 08:40:20,445 - INFO - Creating key 'test2' with value '{"Name": "Test2", "Age": 21, "Grade": 11, "Class": "B", "Subjects": ["Math", "Science"]}'
+2025-07-02 08:40:20,445 - INFO - Parsing value '{"Name": "Test2", "Age": 21, "Grade": 11, "Class": "B", "Subjects": ["Math", "Science"]}'
+2025-07-02 08:40:20,445 - INFO - Parsed value to {'Name': 'Test2', 'Age': 21, 'Grade': 11, 'Class': 'B', 'Subjects': ['Math', 'Science']}
+2025-07-02 08:40:20,445 - INFO - Student data validation passed
+2025-07-02 08:40:20,446 - INFO - Parsed value: {'Name': 'Test2', 'Age': 21, 'Grade': 11, 'Class': 'B', 'Subjects': ['Math', 'Science']}
+2025-07-02 08:40:20,446 - INFO - Added test2 to store
+2025-07-02 08:40:20,446 - INFO - Added test2 to value_index with value_key {"Age": 21, "Class": "B", "Grade": 11, "Name": "Test2", "Subjects": ["Math", "Science"]}
+2025-07-02 08:40:20,446 - INFO - Extracted words for 'test2': {'age', '21', 'math', 'class', 'test2', 'grade', 'name', 'b', 'science', 'subjects', '11'}
+2025-07-02 08:40:20,446 - INFO - Added test2 to inverted_index for word 'age'
+2025-07-02 08:40:20,446 - INFO - Added test2 to inverted_index for word '21'
+2025-07-02 08:40:20,447 - INFO - Added test2 to inverted_index for word 'math'
+2025-07-02 08:40:20,447 - INFO - Added test2 to inverted_index for word 'class'
+2025-07-02 08:40:20,447 - INFO - Added test2 to inverted_index for word 'test2'
+2025-07-02 08:40:20,447 - INFO - Added test2 to inverted_index for word 'grade'
+2025-07-02 08:40:20,447 - INFO - Added test2 to inverted_index for word 'name'
+2025-07-02 08:40:20,447 - INFO - Added test2 to inverted_index for word 'b'
+2025-07-02 08:40:20,447 - INFO - Added test2 to inverted_index for word 'science'
+2025-07-02 08:40:20,447 - INFO - Added test2 to inverted_index for word 'subjects'
+2025-07-02 08:40:20,447 - INFO - Added test2 to inverted_index for word '11'
+2025-07-02 08:40:20,447 - INFO - Calling save method
+2025-07-02 08:40:20,447 - INFO - Attempting to acquire lock for save
+2025-07-02 08:40:20,447 - INFO - Entering save method
+2025-07-02 08:40:20,448 - INFO - Creating backup
+2025-07-02 08:40:20,448 - INFO - Backup created
+2025-07-02 08:40:20,450 - INFO - Creating temporary file
+2025-07-02 08:40:20,450 - INFO - Writing to compressed temporary file
+2025-07-02 08:40:20,530 - INFO - Renaming /home/ashu304/simpledb/simpledb/tmp070zbvgx.gz to test_database.json.gz
+2025-07-02 08:40:20,531 - INFO - Saved compressed database to test_database.json.gz
+2025-07-02 08:40:20,531 - INFO - File write completed
+2025-07-02 08:40:20,532 - INFO - Exiting save method
+2025-07-02 08:40:20,533 - INFO - Releasing lock for save
+2025-07-02 08:40:20,533 - INFO - Completed create for key 'test2'
+2025-07-02 08:40:20,534 - INFO - Releasing lock for create
+2025-07-02 08:40:20,534 - INFO - Attempting to acquire lock for find
+2025-07-02 08:40:20,534 - INFO - Processing find query: fulltext "Math Science"
+2025-07-02 08:40:20,535 - INFO - Using raw string value 'Math Science' for fulltext query
+2025-07-02 08:40:20,536 - INFO - Inverted index for query terms: [('science', ['test2']), ('math', ['test1', 'test2'])]
+2025-07-02 08:40:20,536 - INFO - Fulltext query results: ['test2']
+2025-07-02 08:40:20,536 - INFO - Releasing lock for find
+2025-07-02 08:42:36,223 - INFO - Attempting to acquire lock for load
+2025-07-02 08:42:36,224 - INFO - Entering load method
+2025-07-02 08:42:36,225 - INFO - Opening compressed database file for reading
+2025-07-02 08:42:36,225 - INFO - Reading compressed database file
+2025-07-02 08:42:36,225 - INFO - Rebuilding indices
+2025-07-02 08:42:36,226 - INFO - Attempting to acquire lock for rebuild_indices
+2025-07-02 08:42:36,226 - INFO - Rebuilding indices
+2025-07-02 08:42:36,227 - INFO - Processing key 'student001' with value {'Name': 'Alice', 'Age': 15, 'Grade': 10, 'Class': 'A', 'Subjects': ['Math', 'Science'], 'file_paths': [{'path': 'files/student001_picture.png.gz', 'original_ext': '.png', 'size': 492262, 'original_size': 495614, 'uploaded': '2025-07-02T08:19:10', 'mime': 'image/png'}]}
+2025-07-02 08:42:36,227 - INFO - Added student001 to value_index with value_key {"Age": 15, "Class": "A", "Grade": 10, "Name": "Alice", "Subjects": ["Math", "Science"], "file_paths": [{"mime": "image/png", "original_ext": ".png", "original_size": 495614, "path": "files/student001_picture.png.gz", "size": 492262, "uploaded": "2025-07-02T08:19:10"}]}
+2025-07-02 08:42:36,227 - INFO - Tokenized string for 'student001': {'name': 'alice', 'age': 15, 'grade': 10, 'class': 'a', 'subjects': ['math', 'science'], 'file_paths': [{'path': 'files/student001_picture.png.gz', 'original_ext': '.png', 'size': 492262, 'original_size': 495614, 'uploaded': '2025-07-02t08:19:10', 'mime': 'image/png'}]}
+2025-07-02 08:42:36,227 - INFO - Extracted words for 'student001': {'10', 'grade', 'size', '19', 'mime', 'a', 'original_ext', '492262', 'age', 'student001_picture', 'subjects', 'files', '495614', 'class', '2025', 'name', 'png', 'uploaded', 'gz', 'math', '02t08', 'original_size', '07', '15', 'file_paths', 'alice', 'path', 'image', 'science'}
+2025-07-02 08:42:36,228 - INFO - Added student001 to inverted_index for word '10'
+2025-07-02 08:42:36,228 - INFO - Added student001 to inverted_index for word 'grade'
+2025-07-02 08:42:36,228 - INFO - Added student001 to inverted_index for word 'size'
+2025-07-02 08:42:36,228 - INFO - Added student001 to inverted_index for word '19'
+2025-07-02 08:42:36,228 - INFO - Added student001 to inverted_index for word 'mime'
+2025-07-02 08:42:36,228 - INFO - Added student001 to inverted_index for word 'a'
+2025-07-02 08:42:36,228 - INFO - Added student001 to inverted_index for word 'original_ext'
+2025-07-02 08:42:36,228 - INFO - Added student001 to inverted_index for word '492262'
+2025-07-02 08:42:36,228 - INFO - Added student001 to inverted_index for word 'age'
+2025-07-02 08:42:36,228 - INFO - Added student001 to inverted_index for word 'student001_picture'
+2025-07-02 08:42:36,228 - INFO - Added student001 to inverted_index for word 'subjects'
+2025-07-02 08:42:36,228 - INFO - Added student001 to inverted_index for word 'files'
+2025-07-02 08:42:36,228 - INFO - Added student001 to inverted_index for word '495614'
+2025-07-02 08:42:36,228 - INFO - Added student001 to inverted_index for word 'class'
+2025-07-02 08:42:36,228 - INFO - Added student001 to inverted_index for word '2025'
+2025-07-02 08:42:36,229 - INFO - Added student001 to inverted_index for word 'name'
+2025-07-02 08:42:36,229 - INFO - Added student001 to inverted_index for word 'png'
+2025-07-02 08:42:36,229 - INFO - Added student001 to inverted_index for word 'uploaded'
+2025-07-02 08:42:36,229 - INFO - Added student001 to inverted_index for word 'gz'
+2025-07-02 08:42:36,229 - INFO - Added student001 to inverted_index for word 'math'
+2025-07-02 08:42:36,229 - INFO - Added student001 to inverted_index for word '02t08'
+2025-07-02 08:42:36,229 - INFO - Added student001 to inverted_index for word 'original_size'
+2025-07-02 08:42:36,229 - INFO - Added student001 to inverted_index for word '07'
+2025-07-02 08:42:36,229 - INFO - Added student001 to inverted_index for word '15'
+2025-07-02 08:42:36,230 - INFO - Added student001 to inverted_index for word 'file_paths'
+2025-07-02 08:42:36,230 - INFO - Added student001 to inverted_index for word 'alice'
+2025-07-02 08:42:36,230 - INFO - Added student001 to inverted_index for word 'path'
+2025-07-02 08:42:36,230 - INFO - Added student001 to inverted_index for word 'image'
+2025-07-02 08:42:36,230 - INFO - Added student001 to inverted_index for word 'science'
+2025-07-02 08:42:36,230 - INFO - Indices rebuilt
+2025-07-02 08:42:36,230 - INFO - Releasing lock for rebuild_indices
+2025-07-02 08:42:36,230 - INFO - Loaded compressed database from database.json.gz
+2025-07-02 08:42:36,231 - INFO - Exiting load method
+2025-07-02 08:42:36,231 - INFO - Releasing lock for load
+2025-07-02 08:42:36,231 - INFO - Attempting to acquire lock for login
+2025-07-02 08:42:36,231 - INFO - Processing login for user 'admin'
+2025-07-02 08:42:36,231 - INFO - Logged in as admin with role admin
+2025-07-02 08:42:36,231 - INFO - Releasing lock for login
+2025-07-02 08:42:36,232 - INFO - Attempting to acquire lock for create
+2025-07-02 08:42:36,232 - INFO - Creating key 'test' with value '{"Name": "Test", "Age": 20}'
+2025-07-02 08:42:36,232 - INFO - Parsing value '{"Name": "Test", "Age": 20}'
+2025-07-02 08:42:36,232 - INFO - Parsed value to {'Name': 'Test', 'Age': 20}
+2025-07-02 08:42:36,232 - INFO - Parsed value: {'Name': 'Test', 'Age': 20}
+2025-07-02 08:42:36,232 - INFO - Added test to store
+2025-07-02 08:42:36,232 - INFO - Added test to value_index with value_key {"Age": 20, "Name": "Test"}
+2025-07-02 08:42:36,232 - INFO - Extracted words for 'test': {'20', 'age', 'name', 'test'}
+2025-07-02 08:42:36,232 - INFO - Added test to inverted_index for word '20'
+2025-07-02 08:42:36,233 - INFO - Added test to inverted_index for word 'age'
+2025-07-02 08:42:36,233 - INFO - Added test to inverted_index for word 'name'
+2025-07-02 08:42:36,233 - INFO - Added test to inverted_index for word 'test'
+2025-07-02 08:42:36,233 - INFO - Calling save method
+2025-07-02 08:42:36,233 - INFO - Attempting to acquire lock for save
+2025-07-02 08:42:36,233 - INFO - Entering save method
+2025-07-02 08:42:36,234 - INFO - Creating backup
+2025-07-02 08:42:36,234 - INFO - Backup created
+2025-07-02 08:42:36,235 - INFO - Creating temporary file
+2025-07-02 08:42:36,236 - INFO - Writing to compressed temporary file
+2025-07-02 08:42:36,367 - INFO - Renaming /home/ashu304/simpledb/simpledb/tmpfvr1wmin.gz to database.json.gz
+2025-07-02 08:42:36,367 - INFO - Saved compressed database to database.json.gz
+2025-07-02 08:42:36,367 - INFO - File write completed
+2025-07-02 08:42:36,368 - INFO - Exiting save method
+2025-07-02 08:42:36,368 - INFO - Releasing lock for save
+2025-07-02 08:42:36,368 - INFO - Completed create for key 'test'
+2025-07-02 08:42:36,368 - INFO - Releasing lock for create
+2025-07-02 08:42:36,368 - INFO - Attempting to acquire lock for find
+2025-07-02 08:42:36,368 - INFO - Processing find query: fulltext "Test"
+2025-07-02 08:42:36,369 - INFO - Using raw string value 'Test' for fulltext query
+2025-07-02 08:42:36,369 - INFO - Inverted index for query terms: [('test', ['test'])]
+2025-07-02 08:42:36,369 - INFO - Fulltext query results: ['test']
+2025-07-02 08:42:36,369 - INFO - Releasing lock for find
+2025-07-02 15:52:00,997 - INFO - Attempting to acquire lock for load
+2025-07-02 15:52:01,036 - INFO - Entering load method
+2025-07-02 15:52:01,036 - INFO - No database file found. Starting with an empty database.
+2025-07-02 15:52:01,037 - INFO - Exiting load method
+2025-07-02 15:52:01,037 - INFO - Releasing lock for load
