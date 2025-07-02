@@ -59,13 +59,5 @@ simpledb-cli
 
 ---
 
-### How to use this:
 
-- Save it as `README.md` in your project root.
-- Include it in your `setup.py` or `pyproject.toml` as your long description.
-- Validate with `twine check dist/*` before uploading to PyPI.
-
----
-
-If you want, I can help you generate the full `README.md` file ready to copy-paste!
 ```
